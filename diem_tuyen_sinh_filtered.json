@@ -1,33 +1,5 @@
 [
   {
-    "school_code": "KCN",
-    "school_name": "Trường Đại Học Khoa Học Và Công Nghệ Hà Nội",
-    "scores": {
-      "2025": 23.0,
-      "2024": 25.01,
-      "2023": 23.14
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=KCN&nganh=29",
-    "major_name": "Công nghệ bán dẫn",
-    "major_code": "29",
-    "career_opportunities": "Kỹ sư thiết kế vi mạch (Front-end/Back-end), Kỹ sư kiểm thử (Verification), Kỹ sư Layout, Kỹ sư quy trình sản xuất bán dẫn. Làm việc tại các tập đoàn như Intel, Samsung, Marvell, Synopsys...",
-    "selection_criteria": "Xét tuyển bình đẳng giữa các nguyện vọng. Ưu tiên điểm môn Toán và Vật lý. Yêu cầu trình độ tiếng Anh đạt mức khá (có bài kiểm tra đầu vào)."
-  },
-  {
-    "school_code": "KCN",
-    "school_name": "Trường Đại Học Khoa Học Và Công Nghệ Hà Nội",
-    "scores": {
-      "2025": 23.0,
-      "2024": 25.01,
-      "2023": 23.14
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=KCN&nganh=236",
-    "major_name": "Vi mạch bán dẫn",
-    "major_code": "236",
-    "career_opportunities": "Kỹ sư thiết kế vi mạch, Kỹ sư kiểm thử thiết kế, Kỹ sư Layout vi mạch, Kỹ sư quy trình tại nhà máy đóng gói và kiểm thử. Cơ hội làm việc rộng mở tại các công ty thiết kế chip quốc tế.",
-    "selection_criteria": "Xét tuyển bình đẳng giữa các nguyện vọng. Ưu tiên điểm môn Toán. Chương trình đào tạo bằng tiếng Anh, thí sinh cần có nền tảng ngoại ngữ tốt."
-  },
-  {
     "school_code": "DDL",
     "school_name": "Trường Đại Học Điện Lực",
     "scores": {
@@ -54,48 +26,6 @@
     "major_code": "221",
     "career_opportunities": "Kỹ sư vận hành hệ thống điện, Thiết kế điện công nghiệp và dân dụng, Bảo trì thiết bị điện tử, Chuyên viên giải pháp năng lượng tái tạo. Làm việc tại EVN, nhà máy sản xuất, công ty cơ điện M&E.",
     "selection_criteria": "Xét tuyển bình đẳng giữa các nguyện vọng. Ưu tiên thí sinh có điểm môn Toán cao hơn nếu tổng điểm bằng nhau."
-  },
-  {
-    "school_code": "DCN",
-    "school_name": "Đại Học Công Nghiệp Hà Nội",
-    "scores": {
-      "2025": 22.75,
-      "2024": 24.4,
-      "2023": 23.65
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=DCN&nganh=33",
-    "major_name": "Công nghệ kỹ thuật điện tử - viễn thông",
-    "major_code": "33",
-    "career_opportunities": "Kỹ sư triển khai hệ thống viễn thông, Kỹ sư sản xuất thiết bị điện tử, Lập trình ứng dụng nhúng, Kỹ sư bảo trì mạng. Làm việc tại các nhà mạng hoặc các công ty sản xuất điện tử lớn.",
-    "selection_criteria": "Xét tuyển bình đẳng giữa các nguyện vọng. Tiêu chí phụ: 1. Điểm Toán; 2. Điểm Lý/Anh; 3. Thứ tự nguyện vọng."
-  },
-  {
-    "school_code": "DKK",
-    "school_name": "Trường Đại Học Kinh Tế Kỹ Thuật Công Nghiệp",
-    "scores": {
-      "2025": 22.5,
-      "2024": 18.5,
-      "2023": 18.5
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=DKK&nganh=222",
-    "major_name": "Công nghệ kỹ thuật điều khiển và tự động hóa",
-    "major_code": "222",
-    "career_opportunities": "Kỹ sư lập trình PLC/SCADA, Kỹ sư vận hành dây chuyền tự động, Tích hợp hệ thống sản xuất thông minh. Làm việc tại VinFast, Samsung, các nhà máy thực phẩm và đồ uống.",
-    "selection_criteria": "Ưu tiên xét tuyển theo điểm thi tốt nghiệp THPT. Tiêu chí phụ: Ưu tiên điểm môn Toán, sau đó xét đến thứ tự nguyện vọng."
-  },
-  {
-    "school_code": "DCN",
-    "school_name": "Đại Học Công Nghiệp Hà Nội",
-    "scores": {
-      "2025": 22.5,
-      "2024": 22.6,
-      "2023": 20.0
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=DCN&nganh=231",
-    "major_name": "Tự động hóa",
-    "major_code": "231",
-    "career_opportunities": "Kỹ sư tự động hóa, Chuyên viên thiết kế hệ thống điều khiển, Kỹ sư bảo trì dây chuyền robot. Làm việc trong các dây chuyền sản xuất tự động hóa cao của các tập đoàn đa quốc gia.",
-    "selection_criteria": "Xét tuyển từ cao xuống thấp. Nếu bằng điểm, ưu tiên môn Toán và ưu tiên thí sinh đăng ký nguyện vọng cao hơn."
   },
   {
     "school_code": "TLA",
@@ -138,34 +68,6 @@
     "selection_criteria": "Xét tuyển dựa trên kết quả thi THPT. Tiêu chí phụ: Điểm môn Sinh học hoặc Toán (tùy tổ hợp), ưu tiên NV cao hơn khi cùng mức điểm."
   },
   {
-    "school_code": "PKA",
-    "school_name": "Đại Học Phenikaa",
-    "scores": {
-      "2025": 22.0,
-      "2024": 22.0,
-      "2023": 22.0
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=PKA&nganh=225",
-    "major_name": "Kỹ thuật Điều khiển - Tự động hoá",
-    "major_code": "225",
-    "career_opportunities": "Kỹ sư thiết kế hệ thống tự động, Lập trình điều khiển PLC, Kỹ sư tích hợp hệ thống I4.0. Làm việc tại các nhà máy sản xuất thông minh, doanh nghiệp vận hành kho bãi hiện đại.",
-    "selection_criteria": "Xét tuyển bình đẳng giữa các nguyện vọng. Tiêu chí phụ: Ưu tiên thí sinh có điểm môn Toán cao hơn."
-  },
-  {
-    "school_code": "DKK",
-    "school_name": "Trường Đại Học Kinh Tế Kỹ Thuật Công Nghiệp",
-    "scores": {
-      "2025": 22.0,
-      "2024": 17.5,
-      "2023": 17.5
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=DKK&nganh=221",
-    "major_name": "Công nghệ kỹ thuật điện, điện tử",
-    "major_code": "221",
-    "career_opportunities": "Kỹ sư vận hành bảo trì hệ thống điện, Kỹ sư thiết kế điện công nghiệp, Chuyên viên tư vấn thiết bị điện. Làm việc tại các khu công nghiệp, nhà máy sản xuất linh kiện điện tử.",
-    "selection_criteria": "Xét tuyển từ cao xuống thấp. Tiêu chí phụ: Ưu tiên điểm môn Toán, sau đó xét đến thứ tự nguyện vọng đăng ký."
-  },
-  {
     "school_code": "TLA",
     "school_name": "Trường Đại Học Thủy Lợi",
     "scores": {
@@ -192,20 +94,6 @@
     "major_code": "234",
     "career_opportunities": "Kỹ sư điện - điện tử trong nông nghiệp công nghệ cao, Thiết kế và bảo trì hệ thống điện công nghiệp, Kỹ sư vận hành máy móc sản xuất. Làm việc tại các doanh nghiệp nông nghiệp hiện đại.",
     "selection_criteria": "Xét tuyển bình đẳng giữa các nguyện vọng. Nếu bằng điểm, ưu tiên thí sinh có nguyện vọng ưu tiên cao hơn (NV1, NV2...)."
-  },
-  {
-    "school_code": "PKA",
-    "school_name": "Đại Học Phenikaa",
-    "scores": {
-      "2025": 22.0,
-      "2024": 22.0,
-      "2023": 22.0
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=PKA&nganh=46",
-    "major_name": "Robot và trí tuệ nhân tạo",
-    "major_code": "46",
-    "career_opportunities": "Kỹ sư lập trình AI/Machine Learning, Kỹ sư phát triển Robot, Kỹ sư xử lý hình ảnh, Kỹ sư dữ liệu. Làm việc tại FPT, VNG, VinAI, các startup công nghệ và đơn vị sản xuất robot.",
-    "selection_criteria": "Xét tuyển dựa trên kết quả thi THPT. Ưu tiên thí sinh có điểm môn Toán cao và có chứng chỉ ngoại ngữ quốc tế."
   },
   {
     "school_code": "DDL",
@@ -278,20 +166,6 @@
     "selection_criteria": "Xét tuyển bình đẳng. Nếu bằng điểm, ưu tiên thí sinh có điểm môn Toán cao hơn và thứ tự nguyện vọng ưu tiên."
   },
   {
-    "school_code": "PKA",
-    "school_name": "Đại Học Phenikaa",
-    "scores": {
-      "2025": 21.0,
-      "2024": 21.0,
-      "2023": 21.0
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=PKA&nganh=41",
-    "major_name": "Kỹ thuật điện tử - viễn thông",
-    "major_code": "41",
-    "career_opportunities": "Kỹ sư thiết kế thiết bị điện tử, Kỹ sư mạng 5G/6G, Chuyên gia hệ thống IoT, Lập trình nhúng phần cứng. Làm việc tại các tập đoàn đa quốc gia Samsung, LG, Foxconn.",
-    "selection_criteria": "Xét tuyển bình đẳng giữa các nguyện vọng. Tiêu chí phụ: Ưu tiên điểm môn Toán cao hơn."
-  },
-  {
     "school_code": "VJU",
     "school_name": "Trường Đại học Việt Nhật - ĐHQG Hà Nội",
     "scores": {
@@ -314,19 +188,6 @@
     "major_code": "221",
     "career_opportunities": "Kỹ sư điện tử công nghiệp, Quản lý dự án năng lượng bền vững, Thiết kế hệ thống điện thông minh. Cơ hội thực tập và làm việc tại các doanh nghiệp Nhật Bản.",
     "selection_criteria": "Xét tuyển dựa trên hồ sơ, điểm thi THPT và năng lực ngoại ngữ. Ưu tiên thí sinh có định hướng làm việc tại các doanh nghiệp Nhật Bản."
-  },
-  {
-    "school_code": "PKA",
-    "school_name": "Đại Học Phenikaa",
-    "scores": {
-      "2025": 21.0,
-      "2024": 21.0
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=PKA&nganh=29",
-    "major_name": "Công nghệ bán dẫn",
-    "major_code": "29",
-    "career_opportunities": "Kỹ sư thiết kế vi mạch, Kỹ sư quy trình bán dẫn, Chuyên viên kiểm thử chip, Nghiên cứu vật liệu bán dẫn. Ngành đang cực kỳ khát nhân lực với mức đãi ngộ cao.",
-    "selection_criteria": "Xét tuyển bình đẳng giữa các nguyện vọng. Tiêu chí phụ: Ưu tiên điểm môn Toán cao hơn."
   },
   {
     "school_code": "MDA",
@@ -369,20 +230,6 @@
     "selection_criteria": "Xét tuyển theo điểm thi THPT. Tiêu chí phụ: 1. Điểm Toán; 2. Điểm Hóa/Anh; 3. Thứ tự nguyện vọng ưu tiên."
   },
   {
-    "school_code": "DKK",
-    "school_name": "Trường Đại Học Kinh Tế Kỹ Thuật Công Nghiệp",
-    "scores": {
-      "2025": 20.5,
-      "2024": 18.5,
-      "2023": 18.5
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=DKK&nganh=33",
-    "major_name": "Công nghệ kỹ thuật điện tử - viễn thông",
-    "major_code": "33",
-    "career_opportunities": "Kỹ sư lắp ráp thiết bị điện tử, Kỹ sư bảo trì mạng viễn thông, Nhân viên kỹ thuật phần cứng, Chuyên viên vận hành hệ thống thông tin.",
-    "selection_criteria": "Xét tuyển theo điểm thi THPT. Ưu tiên thí sinh có điểm môn Toán cao và thứ tự nguyện vọng đăng ký sớm."
-  },
-  {
     "school_code": "HVN",
     "school_name": "Học Viện Nông Nghiệp Việt Nam",
     "scores": {
@@ -421,40 +268,12 @@
     "selection_criteria": "Xét tuyển theo quy trình riêng của trường. Tiêu chí phụ: Ưu tiên điểm môn Toán và khả năng thích nghi môi trường quốc tế."
   },
   {
-    "school_code": "KCN",
-    "school_name": "Trường Đại Học Khoa Học Và Công Nghệ Hà Nội",
-    "scores": {
-      "2025": 19.25,
-      "2024": 21.6,
-      "2023": 23.14
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=KCN&nganh=275",
-    "major_name": "Công nghệ Sinh học",
-    "major_code": "275",
-    "career_opportunities": "Chuyên viên R&D tại các viện quốc tế, Kỹ sư y sinh, Chuyên gia công nghệ thực phẩm, Kỹ sư môi trường sinh học. Làm việc trong môi trường quốc tế sử dụng tiếng Anh.",
-    "selection_criteria": "Xét tuyển dựa trên kết quả thi THPT. Ưu tiên điểm môn Sinh học và tiếng Anh (có yêu cầu trình độ tiếng Anh tối thiểu)."
-  },
-  {
-    "school_code": "KCN",
-    "school_name": "Trường Đại Học Khoa Học Và Công Nghệ Hà Nội",
-    "scores": {
-      "2025": 19.0,
-      "2024": 20.8,
-      "2023": 22.65
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=KCN&nganh=223",
-    "major_name": "Kỹ thuật điện",
-    "major_code": "223",
-    "career_opportunities": "Kỹ sư hệ thống điện, Chuyên gia năng lượng bền vững, Thiết kế điện công nghiệp. Chương trình đào tạo chuẩn quốc tế, cơ hội tu nghiệp tại Pháp.",
-    "selection_criteria": "Xét tuyển dựa trên kết quả thi THPT. Ưu tiên điểm môn Toán và Vật lý. Cần đạt yêu cầu về trình độ tiếng Anh."
-  },
-  {
     "school_code": "DKK",
     "school_name": "Trường Đại Học Kinh Tế Kỹ Thuật Công Nghiệp",
     "scores": {
-      "2025": 19.0,
-      "2024": 17.5,
-      "2023": 17.5
+      "2025": 21.5,
+      "2024": 20,
+      "2023": 20
     },
     "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=DKK&nganh=266",
     "major_name": "Công nghệ Thực phẩm",
@@ -489,20 +308,6 @@
     "major_code": "266",
     "career_opportunities": "Kỹ sư kiểm soát chất lượng thực phẩm, Chuyên viên tư vấn dinh dưỡng, Quản lý kho bảo quản thực phẩm, Nhân viên phát triển sản phẩm.",
     "selection_criteria": "Xét tuyển dựa trên điểm thi THPT. Ưu tiên điểm môn Hóa học và thứ tự nguyện vọng của thí sinh."
-  },
-  {
-    "school_code": "KCN",
-    "school_name": "Trường Đại Học Khoa Học Và Công Nghệ Hà Nội",
-    "scores": {
-      "2025": 18.25,
-      "2024": 20.35,
-      "2023": 22.05
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=KCN&nganh=266",
-    "major_name": "Công nghệ Thực phẩm",
-    "major_code": "266",
-    "career_opportunities": "Chuyên gia phát triển thực phẩm mới (R&D), Kỹ sư quy trình thực phẩm quốc tế, Kiểm soát chất lượng theo chuẩn EU. Làm việc tại các tập đoàn thực phẩm đa quốc gia.",
-    "selection_criteria": "Xét tuyển dựa trên điểm thi THPT. Ưu tiên điểm môn Hóa học và khả năng ngoại ngữ (tiếng Anh)."
   },
   {
     "school_code": "DDL",
@@ -756,18 +561,6 @@
     "major_code": "236",
     "career_opportunities": "Kỹ sư thiết kế vi mạch điện lực, Chuyên viên kiểm soát chất lượng chip, Kỹ sư R&D thiết bị bán dẫn công suất.",
     "selection_criteria": "Xét tuyển dựa trên kết quả thi THPT. Tiêu chí phụ: Ưu tiên môn Toán và ưu tiên thí sinh đăng ký nguyện vọng cao."
-  },
-  {
-    "school_code": "PKA",
-    "school_name": "Đại Học Phenikaa",
-    "scores": {
-      "2023": 18.0
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=PKA&nganh=275",
-    "major_name": "Công nghệ Sinh học",
-    "major_code": "275",
-    "career_opportunities": "Kỹ sư nghiên cứu y sinh, Chuyên viên công nghệ thực phẩm sinh học, QC/QA tại các doanh nghiệp dược phẩm, Chuyên gia nông nghiệp CNC.",
-    "selection_criteria": "Xét tuyển bình đẳng giữa các NV. Tiêu chí phụ: Ưu tiên điểm môn Toán hoặc Sinh học tùy theo tổ hợp xét tuyển."
   },
   {
     "school_code": "TLA",

@@ -35,138 +35,138 @@
   "application_strategy": [
     {
       "priority": 1,
-      "group": "Vượt ngưỡng (Challenging)",
-      "school_code": "KCN",
-      "school_name": "Trường Đại Học Khoa Học Và Công Nghệ Hà Nội",
-      "major_name": "Công nghệ bán dẫn",
-      "score_2025": 23.0,
-      "note": "Ưu tiên môn Toán và Vật lý"
-    },
-    {
-      "priority": 2,
-      "group": "Vượt ngưỡng (Challenging)",
-      "school_code": "KCN",
-      "school_name": "Trường Đại Học Khoa Học Và Công Nghệ Hà Nội",
-      "major_name": "Vi mạch bán dẫn",
-      "score_2025": 23.0,
-      "note": "Ưu tiên môn Toán"
-    },
-    {
-      "priority": 3,
-      "group": "Vừa sức (Realistic)",
+      "group": "Kỳ vọng (Expectation)",
       "school_code": "DDL",
       "school_name": "Trường Đại Học Điện Lực",
       "major_name": "Kỹ thuật điện tử - viễn thông",
       "score_2025": 22.92,
-      "note": "Tiêu chí phụ: Điểm môn Toán"
+      "note": "Mục tiêu bứt phá (+0.57)"
+    },
+    {
+      "priority": 2,
+      "group": "Kỳ vọng (Expectation)",
+      "school_code": "DDL",
+      "school_name": "Trường Đại Học Điện Lực",
+      "major_name": "Công nghệ kỹ thuật điện, điện tử",
+      "score_2025": 22.92,
+      "note": "Mục tiêu bứt phá (+0.57)"
+    },
+    {
+      "priority": 3,
+      "group": "Vừa sức (Realistic)",
+      "school_code": "TLA",
+      "school_name": "Trường Đại Học Thủy Lợi",
+      "major_name": "Kỹ thuật điện tử - viễn thông",
+      "score_2025": 22.5,
+      "note": "Vùng an toàn cao"
     },
     {
       "priority": 4,
       "group": "Vừa sức (Realistic)",
-      "school_code": "DCN",
-      "school_name": "Đại Học Công Nghiệp Hà Nội",
-      "major_name": "Công nghệ kỹ thuật điện tử - viễn thông",
-      "score_2025": 22.75,
-      "note": "Tiêu chí phụ: Điểm môn Toán"
+      "school_code": "QHI",
+      "school_name": "Trường Đại Học Công Nghệ – Đại Học Quốc Gia Hà Nội",
+      "major_name": "Công nghệ Sinh học",
+      "score_2025": 22.13,
+      "note": "Vùng an toàn cao"
     },
     {
       "priority": 5,
       "group": "Vừa sức (Realistic)",
-      "school_code": "DCN",
-      "school_name": "Đại Học Công Nghiệp Hà Nội",
-      "major_name": "Tự động hóa",
-      "score_2025": 22.5,
-      "note": "Ưu tiên môn Toán"
+      "school_code": "QHT",
+      "school_name": "Trường Đại Học Khoa Học Tự Nhiên Hà Nội",
+      "major_name": "Công nghệ Sinh học",
+      "score_2025": 22.05,
+      "note": "Vùng an toàn cao"
     },
     {
       "priority": 6,
       "group": "Vừa sức (Realistic)",
       "school_code": "TLA",
       "school_name": "Trường Đại Học Thủy Lợi",
-      "major_name": "Kỹ thuật điện tử - viễn thông",
-      "score_2025": 22.5,
-      "note": "Tiêu chí phụ: Điểm môn Toán"
+      "major_name": "Kỹ thuật điện",
+      "score_2025": 22.0,
+      "note": "Vùng an toàn cao"
     },
     {
       "priority": 7,
       "group": "Vừa sức (Realistic)",
-      "school_code": "DKK",
-      "school_name": "Trường Đại Học Kinh Tế Kỹ Thuật Công Nghiệp",
-      "major_name": "Công nghệ kỹ thuật điều khiển và tự động hóa",
-      "score_2025": 22.5,
-      "note": "Ưu tiên điểm môn Toán"
+      "school_code": "HVN",
+      "school_name": "Học Viện Nông Nghiệp Việt Nam",
+      "major_name": "Kỹ thuật Điện - Điện tử",
+      "score_2025": 22.0,
+      "note": "Vùng an toàn cao"
     },
     {
       "priority": 8,
       "group": "Vừa sức (Realistic)",
-      "school_code": "QHI",
-      "school_name": "Trường Đại Học Công Nghệ – Đại Học Quốc Gia Hà Nội",
-      "major_name": "Công nghệ Sinh học",
-      "score_2025": 22.13,
-      "note": "Tiêu chí phụ: Điểm môn Toán"
+      "school_code": "DDL",
+      "school_name": "Trường Đại Học Điện Lực",
+      "major_name": "Công nghệ kỹ thuật điện tử - viễn thông",
+      "score_2025": 21.83,
+      "note": "Vùng an toàn cao"
     },
     {
       "priority": 9,
       "group": "Vừa sức (Realistic)",
-      "school_code": "QHT",
-      "school_name": "Trường Đại Học Khoa Học Tự Nhiên Hà Nội",
-      "major_name": "Công nghệ Sinh học",
-      "score_2025": 22.05,
-      "note": "Tiêu chí phụ: Điểm môn Sinh học hoặc Toán"
-    },
-    {
-      "priority": 10,
-      "group": "Vừa sức (Realistic)",
-      "school_code": "PKA",
-      "school_name": "Đại Học Phenikaa",
-      "major_name": "Robot và trí tuệ nhân tạo",
-      "score_2025": 22.0,
-      "note": "Ưu tiên điểm môn Toán"
-    },
-    {
-      "priority": 11,
-      "group": "An toàn (Safe)",
       "school_code": "GTA",
       "school_name": "Trường Đại học Công nghệ Giao thông vận tải",
       "major_name": "Công nghệ kỹ thuật điện tử - viễn thông",
       "score_2025": 21.5,
-      "note": "Ưu tiên môn Toán"
+      "note": "Vùng an toàn cao"
+    },
+    {
+      "priority": 10,
+      "group": "Phòng thủ (Defense)",
+      "school_code": "DCN",
+      "school_name": "Đại Học Công Nghiệp Hà Nội",
+      "major_name": "Công nghệ Thực phẩm",
+      "score_2025": 20.6,
+      "note": "Lưới đỡ dự phòng"
+    },
+    {
+      "priority": 11,
+      "group": "Phòng thủ (Defense)",
+      "school_code": "HVN",
+      "school_name": "Học Viện Nông Nghiệp Việt Nam",
+      "major_name": "Công nghệ Sinh học",
+      "score_2025": 20.5,
+      "note": "Lưới đỡ dự phòng"
     },
     {
       "priority": 12,
-      "group": "An toàn (Safe)",
-      "school_code": "MDA",
-      "school_name": "Trường Đại Học Mỏ Địa Chất",
-      "major_name": "Kỹ thuật điện",
-      "score_2025": 21.5,
-      "note": "Ưu tiên điểm môn Toán"
+      "group": "Phòng thủ (Defense)",
+      "school_code": "VJU",
+      "school_name": "Trường Đại học Việt Nhật - ĐHQG Hà Nội",
+      "major_name": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+      "score_2025": 20.0,
+      "note": "Lưới đỡ dự phòng"
     },
     {
       "priority": 13,
-      "group": "An toàn (Safe)",
-      "school_code": "TLA",
-      "school_name": "Trường Đại Học Thủy Lợi",
-      "major_name": "Robot và trí tuệ nhân tạo",
-      "score_2025": 21.15,
-      "note": "Tiêu chí phụ: Điểm môn Toán"
+      "group": "Chắc chắn đỗ (Sure bet)",
+      "school_code": "MHN",
+      "school_name": "Trường Đại Học Mở Hà Nội",
+      "major_name": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+      "score_2025": 18.81,
+      "note": "Chốt hạ tuyệt đối"
     },
     {
       "priority": 14,
-      "group": "An toàn (Safe)",
-      "school_code": "PKA",
-      "school_name": "Đại Học Phenikaa",
-      "major_name": "Công nghệ bán dẫn",
-      "score_2025": 21.0,
-      "note": "Ngành tiềm năng, điểm an toàn"
+      "group": "Chắc chắn đỗ (Sure bet)",
+      "school_code": "MHN",
+      "school_name": "Trường Đại Học Mở Hà Nội",
+      "major_name": "Công nghệ Thực phẩm",
+      "score_2025": 18.8,
+      "note": "Chốt hạ tuyệt đối"
     },
     {
       "priority": 15,
-      "group": "An toàn (Safe)",
-      "school_code": "DKK",
-      "school_name": "Trường Đại Học Kinh Tế Kỹ Thuật Công Nghiệp",
-      "major_name": "Công nghệ kỹ thuật điện tử - viễn thông",
-      "score_2025": 20.5,
-      "note": "Điểm chốt hạ rất an toàn"
+      "group": "Chắc chắn đỗ (Sure bet)",
+      "school_code": "DDL",
+      "school_name": "Trường Đại Học Điện Lực",
+      "major_name": "Kỹ thuật Robot",
+      "score_2025": 18.17,
+      "note": "Chốt hạ tuyệt đối"
     }
   ]
 }
