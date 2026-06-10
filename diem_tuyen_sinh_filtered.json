@@ -166,30 +166,6 @@
     "selection_criteria": "Xét tuyển bình đẳng. Nếu bằng điểm, ưu tiên thí sinh có điểm môn Toán cao hơn và thứ tự nguyện vọng ưu tiên."
   },
   {
-    "school_code": "VJU",
-    "school_name": "Trường Đại học Việt Nhật - ĐHQG Hà Nội",
-    "scores": {
-      "2025": 21.0
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=VJU&nganh=41",
-    "major_name": "Kỹ thuật điện tử - viễn thông",
-    "major_code": "41",
-    "career_opportunities": "Kỹ sư điện tử viễn thông chuẩn Nhật Bản, Kỹ sư R&D tại các công ty công nghệ Nhật, Thiết kế vi mạch, Hệ thống truyền thông hiện đại.",
-    "selection_criteria": "Xét tuyển theo quy định riêng của VJU (kết hợp điểm thi THPT và phỏng vấn/đánh giá năng lực). Ưu tiên ngoại ngữ (tiếng Anh hoặc tiếng Nhật)."
-  },
-  {
-    "school_code": "VJU",
-    "school_name": "Trường Đại học Việt Nhật - ĐHQG Hà Nội",
-    "scores": {
-      "2025": 21.0
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=VJU&nganh=221",
-    "major_name": "Công nghệ kỹ thuật điện, điện tử",
-    "major_code": "221",
-    "career_opportunities": "Kỹ sư điện tử công nghiệp, Quản lý dự án năng lượng bền vững, Thiết kế hệ thống điện thông minh. Cơ hội thực tập và làm việc tại các doanh nghiệp Nhật Bản.",
-    "selection_criteria": "Xét tuyển dựa trên hồ sơ, điểm thi THPT và năng lực ngoại ngữ. Ưu tiên thí sinh có định hướng làm việc tại các doanh nghiệp Nhật Bản."
-  },
-  {
     "school_code": "MDA",
     "school_name": "Trường Đại Học Mỏ Địa Chất",
     "scores": {
@@ -242,30 +218,6 @@
     "major_code": "275",
     "career_opportunities": "Kỹ sư giống cây trồng, Chuyên viên nghiên cứu phân bón/thuốc trừ sâu sinh học, Kỹ sư nông nghiệp CNC, QC trong sản xuất thực phẩm.",
     "selection_criteria": "Xét tuyển bình đẳng giữa các NV. Ưu tiên môn Sinh học/Toán và thứ tự nguyện vọng đăng ký."
-  },
-  {
-    "school_code": "VJU",
-    "school_name": "Trường Đại học Việt Nhật - ĐHQG Hà Nội",
-    "scores": {
-      "2025": 20.0
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=VJU&nganh=222",
-    "major_name": "Công nghệ kỹ thuật điều khiển và tự động hóa",
-    "major_code": "222",
-    "career_opportunities": "Kỹ sư tự động hóa, Thiết kế hệ thống điều khiển thông minh, Chuyên gia tích hợp hệ thống I4.0 theo tiêu chuẩn Nhật Bản.",
-    "selection_criteria": "Xét tuyển kết hợp kết quả thi THPT và đánh giá hồ sơ/phỏng vấn. Ưu tiên trình độ ngoại ngữ và thái độ học tập."
-  },
-  {
-    "school_code": "VJU",
-    "school_name": "Trường Đại học Việt Nhật - ĐHQG Hà Nội",
-    "scores": {
-      "2025": 20.0
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=VJU&nganh=225",
-    "major_name": "Kỹ thuật Điều khiển - Tự động hoá",
-    "major_code": "225",
-    "career_opportunities": "Kỹ sư điều khiển, Lập trình PLC, Vận hành nhà máy thông minh. Cơ hội làm việc tại các doanh nghiệp FDI Nhật Bản trong lĩnh vực sản xuất.",
-    "selection_criteria": "Xét tuyển theo quy trình riêng của trường. Tiêu chí phụ: Ưu tiên điểm môn Toán và khả năng thích nghi môi trường quốc tế."
   },
   {
     "school_code": "DKK",
@@ -389,7 +341,7 @@
     "major_name": "Công nghệ kỹ thuật điện, điện tử",
     "major_code": "221",
     "career_opportunities": "Kỹ sư điện công nghiệp, Thiết kế hệ thống điện tòa nhà, Bảo trì máy móc sản xuất, Quản lý dự án cơ điện (M&E).",
-    "selection_criteria": "Xét tuyển linh hoạt qua kết quả thi THPT và học bạ. Tiêu chí phụ: Ưu tiên nguyện vọng 1."
+    "selection_criteria": "Xét tuyển linh hoạt qua kết quả thi THPT and học bạ. Tiêu chí phụ: Ưu tiên nguyện vọng 1."
   },
   {
     "school_code": "CCM",
@@ -574,18 +526,5 @@
     "major_code": "275",
     "career_opportunities": "Chuyên viên nghiên cứu sinh học môi trường, Kỹ sư xử lý nước bằng công nghệ sinh học, QC trong sản xuất chế phẩm sinh học.",
     "selection_criteria": "Xét tuyển dựa trên điểm thi THPT. Tiêu chí phụ: Ưu tiên môn Toán và thứ tự nguyện vọng của thí sinh."
-  },
-  {
-    "school_code": "VJU",
-    "school_name": "Trường Đại học Việt Nhật - ĐHQG Hà Nội",
-    "scores": {
-      "2024": 20.0,
-      "2023": 20.0
-    },
-    "url": "https://diemthi.tuyensinh247.com/to-hop-mon/a00-1.html?truong=VJU&nganh=266",
-    "major_name": "Công nghệ Thực phẩm",
-    "major_code": "266",
-    "career_opportunities": "Kỹ sư thực phẩm chuẩn Nhật, Chuyên gia quản lý chất lượng (QA) quốc tế, Nghiên cứu và phát triển sản phẩm cho thị trường Nhật Bản.",
-    "selection_criteria": "Xét tuyển kết hợp phỏng vấn và điểm thi THPT. Ưu tiên thí sinh có năng lực ngoại ngữ và tinh thần cầu tiến."
   }
 ]

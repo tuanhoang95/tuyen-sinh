@@ -117,28 +117,28 @@
     {
       "priority": 10,
       "group": "Phòng thủ (Defense)",
-      "school_code": "DCN",
-      "school_name": "Đại Học Công Nghiệp Hà Nội",
-      "major_name": "Công nghệ Thực phẩm",
-      "score_2025": 20.6,
-      "note": "Lưới đỡ dự phòng"
+      "school_code": "TLA",
+      "school_name": "Trường Đại Học Thủy Lợi",
+      "major_name": "Robot và trí tuệ nhân tạo",
+      "score_2025": 21.15,
+      "note": "Vùng đệm an toàn"
     },
     {
       "priority": 11,
       "group": "Phòng thủ (Defense)",
-      "school_code": "HVN",
-      "school_name": "Học Viện Nông Nghiệp Việt Nam",
-      "major_name": "Công nghệ Sinh học",
-      "score_2025": 20.5,
+      "school_code": "MDA",
+      "school_name": "Trường Đại Học Mỏ Địa Chất",
+      "major_name": "Kỹ thuật Robot",
+      "score_2025": 21.0,
       "note": "Lưới đỡ dự phòng"
     },
     {
       "priority": 12,
       "group": "Phòng thủ (Defense)",
-      "school_code": "VJU",
-      "school_name": "Trường Đại học Việt Nhật - ĐHQG Hà Nội",
-      "major_name": "Công nghệ kỹ thuật điều khiển và tự động hóa",
-      "score_2025": 20.0,
+      "school_code": "DCN",
+      "school_name": "Đại Học Công Nghiệp Hà Nội",
+      "major_name": "Công nghệ Thực phẩm",
+      "score_2025": 20.6,
       "note": "Lưới đỡ dự phòng"
     },
     {
