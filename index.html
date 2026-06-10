@@ -146,19 +146,15 @@
                 // Render Chart sau khi element đã được thêm vào DOM
                 setTimeout(() => {
                     new Chart(canvas, {
-                        type: 'line',
+                        type: 'bar',
                         data: {
                             labels: years,
                             datasets: [{
                                 label: 'Điểm',
                                 data: scores,
-                                borderColor: '#2563eb',
-                                backgroundColor: 'rgba(37, 99, 235, 0.1)',
-                                borderWidth: 2,
-                                fill: true,
-                                tension: 0.4,
-                                pointBackgroundColor: '#2563eb',
-                                pointRadius: 4
+                                backgroundColor: years.map(y => y === '2025' ? '#ef4444' : '#3b82f6'),
+                                borderRadius: 6,
+                                barPercentage: 0.6
                             }]
                         },
                         options: {
@@ -176,7 +172,11 @@
                             scales: {
                                 y: {
                                     beginAtZero: false,
-                                    grid: { display: false },
+                                    min: Math.min(...scores) - 2 > 0 ? Math.floor(Math.min(...scores) - 2) : 0,
+                                    grid: {
+                                        display: true,
+                                        color: '#f1f5f9'
+                                    },
                                     ticks: { font: { size: 10 } }
                                 },
                                 x: {
