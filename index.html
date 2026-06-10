@@ -157,9 +157,28 @@
                                 barPercentage: 0.6
                             }]
                         },
+                        plugins: [{
+                            id: 'datalabels',
+                            afterDatasetsDraw(chart) {
+                                const { ctx, data } = chart;
+                                ctx.save();
+                                ctx.font = 'bold 10px Inter';
+                                ctx.textAlign = 'center';
+                                ctx.textBaseline = 'bottom';
+                                chart.getDatasetMeta(0).data.forEach((bar, index) => {
+                                    const value = data.datasets[0].data[index];
+                                    ctx.fillStyle = years[index] === '2025' ? '#ef4444' : '#475569';
+                                    ctx.fillText(value, bar.x, bar.y - 5);
+                                });
+                                ctx.restore();
+                            }
+                        }],
                         options: {
                             responsive: true,
                             maintainAspectRatio: false,
+                            layout: {
+                                padding: { top: 20 }
+                            },
                             plugins: {
                                 legend: { display: false },
                                 tooltip: {
