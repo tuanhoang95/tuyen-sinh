@@ -1,0 +1,172 @@
+{
+  "student_status": {
+    "current_scores": {
+      "math": 7.0,
+      "physics": 8.0,
+      "chemistry": 7.35,
+      "total_a00": 22.35
+    },
+    "score_history": [
+      {
+        "attempt": 1,
+        "math": 6.25,
+        "physics": 6.6,
+        "chemistry": 7.3,
+        "total": 20.15
+      },
+      {
+        "attempt": 2,
+        "math": 6.5,
+        "physics": 5.75,
+        "chemistry": 8.5,
+        "total": 20.75
+      },
+      {
+        "attempt": 3,
+        "math": 7.0,
+        "physics": 8.0,
+        "chemistry": 7.35,
+        "total": 22.35
+      }
+    ],
+    "trend": "Increasing",
+    "target_score": 23.0
+  },
+  "application_strategy": [
+    {
+      "priority": 1,
+      "group": "Vượt ngưỡng (Challenging)",
+      "school_code": "KCN",
+      "school_name": "Trường Đại Học Khoa Học Và Công Nghệ Hà Nội",
+      "major_name": "Công nghệ bán dẫn",
+      "score_2025": 23.0,
+      "note": "Ưu tiên môn Toán và Vật lý"
+    },
+    {
+      "priority": 2,
+      "group": "Vượt ngưỡng (Challenging)",
+      "school_code": "KCN",
+      "school_name": "Trường Đại Học Khoa Học Và Công Nghệ Hà Nội",
+      "major_name": "Vi mạch bán dẫn",
+      "score_2025": 23.0,
+      "note": "Ưu tiên môn Toán"
+    },
+    {
+      "priority": 3,
+      "group": "Vừa sức (Realistic)",
+      "school_code": "DDL",
+      "school_name": "Trường Đại Học Điện Lực",
+      "major_name": "Kỹ thuật điện tử - viễn thông",
+      "score_2025": 22.92,
+      "note": "Tiêu chí phụ: Điểm môn Toán"
+    },
+    {
+      "priority": 4,
+      "group": "Vừa sức (Realistic)",
+      "school_code": "DCN",
+      "school_name": "Đại Học Công Nghiệp Hà Nội",
+      "major_name": "Công nghệ kỹ thuật điện tử - viễn thông",
+      "score_2025": 22.75,
+      "note": "Tiêu chí phụ: Điểm môn Toán"
+    },
+    {
+      "priority": 5,
+      "group": "Vừa sức (Realistic)",
+      "school_code": "DCN",
+      "school_name": "Đại Học Công Nghiệp Hà Nội",
+      "major_name": "Tự động hóa",
+      "score_2025": 22.5,
+      "note": "Ưu tiên môn Toán"
+    },
+    {
+      "priority": 6,
+      "group": "Vừa sức (Realistic)",
+      "school_code": "TLA",
+      "school_name": "Trường Đại Học Thủy Lợi",
+      "major_name": "Kỹ thuật điện tử - viễn thông",
+      "score_2025": 22.5,
+      "note": "Tiêu chí phụ: Điểm môn Toán"
+    },
+    {
+      "priority": 7,
+      "group": "Vừa sức (Realistic)",
+      "school_code": "DKK",
+      "school_name": "Trường Đại Học Kinh Tế Kỹ Thuật Công Nghiệp",
+      "major_name": "Công nghệ kỹ thuật điều khiển và tự động hóa",
+      "score_2025": 22.5,
+      "note": "Ưu tiên điểm môn Toán"
+    },
+    {
+      "priority": 8,
+      "group": "Vừa sức (Realistic)",
+      "school_code": "QHI",
+      "school_name": "Trường Đại Học Công Nghệ – Đại Học Quốc Gia Hà Nội",
+      "major_name": "Công nghệ Sinh học",
+      "score_2025": 22.13,
+      "note": "Tiêu chí phụ: Điểm môn Toán"
+    },
+    {
+      "priority": 9,
+      "group": "Vừa sức (Realistic)",
+      "school_code": "QHT",
+      "school_name": "Trường Đại Học Khoa Học Tự Nhiên Hà Nội",
+      "major_name": "Công nghệ Sinh học",
+      "score_2025": 22.05,
+      "note": "Tiêu chí phụ: Điểm môn Sinh học hoặc Toán"
+    },
+    {
+      "priority": 10,
+      "group": "Vừa sức (Realistic)",
+      "school_code": "PKA",
+      "school_name": "Đại Học Phenikaa",
+      "major_name": "Robot và trí tuệ nhân tạo",
+      "score_2025": 22.0,
+      "note": "Ưu tiên điểm môn Toán"
+    },
+    {
+      "priority": 11,
+      "group": "An toàn (Safe)",
+      "school_code": "GTA",
+      "school_name": "Trường Đại học Công nghệ Giao thông vận tải",
+      "major_name": "Công nghệ kỹ thuật điện tử - viễn thông",
+      "score_2025": 21.5,
+      "note": "Ưu tiên môn Toán"
+    },
+    {
+      "priority": 12,
+      "group": "An toàn (Safe)",
+      "school_code": "MDA",
+      "school_name": "Trường Đại Học Mỏ Địa Chất",
+      "major_name": "Kỹ thuật điện",
+      "score_2025": 21.5,
+      "note": "Ưu tiên điểm môn Toán"
+    },
+    {
+      "priority": 13,
+      "group": "An toàn (Safe)",
+      "school_code": "TLA",
+      "school_name": "Trường Đại Học Thủy Lợi",
+      "major_name": "Robot và trí tuệ nhân tạo",
+      "score_2025": 21.15,
+      "note": "Tiêu chí phụ: Điểm môn Toán"
+    },
+    {
+      "priority": 14,
+      "group": "An toàn (Safe)",
+      "school_code": "PKA",
+      "school_name": "Đại Học Phenikaa",
+      "major_name": "Công nghệ bán dẫn",
+      "score_2025": 21.0,
+      "note": "Ngành tiềm năng, điểm an toàn"
+    },
+    {
+      "priority": 15,
+      "group": "An toàn (Safe)",
+      "school_code": "HVN",
+      "school_name": "Học Viện Nông Nghiệp Việt Nam",
+      "major_name": "Kỹ thuật Điện - Điện tử",
+      "score_2025": 22.0,
+      "note": "An toàn dựa trên phổ điểm các năm trước"
+    }
+  ]
+}

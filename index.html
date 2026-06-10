@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tra cứu Điểm Tuyển Sinh 2025</title>
+    <title>Tra cứu Điểm Tuyển Sinh 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -12,35 +12,106 @@
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
         .score-badge { transition: all 0.2s; }
         .score-badge:hover { transform: translateY(-2px); }
+        .nav-item-active { color: #2563eb; }
+        .nav-item-active i { transform: scale(1.1); }
     </style>
 </head>
-<body class="pb-10">
+<body class="pb-24">
 
     <!-- Header -->
     <header class="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4">
+        <div class="container mx-auto px-4 py-4 text-center lg:text-left">
             <h1 class="text-xl font-bold flex items-center justify-center lg:justify-start">
-                <i class="fas fa-graduation-cap mr-2"></i> Tra Cứu Tuyển Sinh
+                <i class="fas fa-graduation-cap mr-2"></i> Tra Cứu Tuyển Sinh 2026
             </h1>
-            <div class="mt-4 relative">
-                <label for="searchInput" class="sr-only">Tìm kiếm</label>
-                <input type="text" id="searchInput"
-                    placeholder="Tìm tên trường, ngành hoặc mã..."
-                    class="w-full py-3 px-11 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300 shadow-inner">
-                <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
-            </div>
         </div>
     </header>
 
     <main class="container mx-auto px-4 mt-6">
-        <!-- Stats/Info -->
-        <div id="resultCount" class="mb-4 text-sm text-gray-600 font-medium italic"></div>
 
-        <!-- Content Grid -->
-        <div id="dataContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Loading skeleton or JS will inject cards here -->
-        </div>
+        <!-- Tab: Tra cứu -->
+        <section id="searchView">
+            <div class="mb-6 relative">
+                <label for="searchInput" class="sr-only">Tìm kiếm</label>
+                <input type="text" id="searchInput"
+                    placeholder="Tìm tên trường, ngành hoặc mã..."
+                    class="w-full py-3 px-11 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300 shadow-sm border border-gray-100">
+                <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+            </div>
+
+            <div id="resultCount" class="mb-4 text-sm text-gray-600 font-medium italic"></div>
+            <div id="dataContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cards will be injected here -->
+            </div>
+        </section>
+
+        <!-- Tab: Chiến lược -->
+        <section id="strategyView" class="hidden">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Chiến lược nguyện vọng 2026</h2>
+
+            <!-- Student Stats Summary -->
+            <div id="studentStats" class="mb-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Stats injected here -->
+            </div>
+
+            <!-- Strategy Charts -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                <!-- Score History Chart -->
+                <div class="lg:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-sm font-bold text-gray-800 mb-4 uppercase tracking-wider">
+                        <i class="fas fa-chart-line mr-2 text-blue-500"></i>Tiến độ điểm số qua các lần thi
+                    </h3>
+                    <div class="h-64">
+                        <canvas id="studentScoreChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Group Distribution Chart -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="text-sm font-bold text-gray-800 mb-4 uppercase tracking-wider text-center">
+                        <i class="fas fa-chart-pie mr-2 text-purple-500"></i>Cơ cấu nguyện vọng
+                    </h3>
+                    <div class="h-64 flex flex-col items-center">
+                        <canvas id="groupDistributionChart"></canvas>
+                        <div id="groupStatsSummary" class="mt-4 w-full grid grid-cols-3 gap-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-gray-50 border-b border-gray-100 text-[10px]">
+                                <th class="px-2 py-3 font-bold text-gray-500 uppercase w-10 text-center">NV</th>
+                                <th class="px-4 py-3 font-bold text-gray-500 uppercase">Trường & Ngành</th>
+                                <th class="px-2 py-3 font-bold text-gray-500 uppercase w-16 text-center">Nhóm</th>
+                                <th class="px-2 py-3 font-bold text-gray-500 uppercase w-20 text-center">Điểm '25</th>
+                                <th class="px-4 py-3 font-bold text-gray-500 uppercase">Ghi chú</th>
+                            </tr>
+                        </thead>
+                        <tbody id="strategyTableBody" class="divide-y divide-gray-50">
+                            <!-- Rows injected here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] z-50">
+        <div class="flex justify-around items-center h-16 max-w-md mx-auto">
+            <button onclick="switchTab('search')" id="tab-search" class="flex flex-col items-center justify-center w-full nav-item-active transition-all">
+                <i class="fas fa-search text-lg mb-1"></i>
+                <span class="text-[10px] font-bold uppercase">Tra cứu</span>
+            </button>
+            <button onclick="switchTab('strategy')" id="tab-strategy" class="flex flex-col items-center justify-center w-full text-gray-400 hover:text-blue-500 transition-all">
+                <i class="fas fa-list-ol text-lg mb-1"></i>
+                <span class="text-[10px] font-bold uppercase">Chiến lược</span>
+            </button>
+        </div>
+    </nav>
 
     <!-- Template for Card -->
     <template id="cardTemplate">
@@ -64,14 +135,14 @@
                         <h3 class="flex items-center text-sm font-bold text-gray-800 w-full mb-1">
                             <i class="fas fa-briefcase text-blue-500 mr-2 w-4"></i> Cơ hội nghề nghiệp
                         </h3>
-                        <div class="text-sm text-gray-600 career-text pl-6 leading-relaxed"></div>
+                        <div class="text-sm text-gray-600 career-text pl-6 leading-relaxed line-clamp-2"></div>
                     </div>
 
                     <div class="pt-3 border-t border-gray-50">
                         <h3 class="flex items-center text-sm font-bold text-gray-800 w-full mb-1">
                             <i class="fas fa-info-circle text-orange-500 mr-2 w-4"></i> Tiêu chí xét tuyển
                         </h3>
-                        <div class="text-sm text-gray-600 criteria-text pl-6 leading-relaxed"></div>
+                        <div class="text-sm text-gray-600 criteria-text pl-6 leading-relaxed line-clamp-2"></div>
                     </div>
                 </div>
             </div>
@@ -87,29 +158,65 @@
 
     <script>
         let allData = [];
+        let strategyData = null;
 
         async function init() {
             try {
-                // Load dữ liệu từ cùng thư mục
-                const response = await fetch('diem_tuyen_sinh_filtered.json');
-                allData = await response.json();
+                // Thêm query string để tránh cache
+                const timestamp = new Date().getTime();
+                const [respData, respStrategy] = await Promise.all([
+                    fetch(`diem_tuyen_sinh_filtered.json?t=${timestamp}`),
+                    fetch(`chien_luoc_nguyen_vong.json?t=${timestamp}`)
+                ]);
+
+                if (!respData.ok || !respStrategy.ok) throw new Error("Không thể tải file dữ liệu JSON.");
+
+                allData = await respData.json();
+                strategyData = await respStrategy.json();
 
                 renderData(allData);
+                renderStrategy(strategyData);
 
                 document.getElementById('searchInput').addEventListener('input', (e) => {
                     const term = e.target.value.toLowerCase().trim();
                     const filtered = allData.filter(item =>
-                        item.school_name.toLowerCase().includes(term) ||
-                        item.major_name.toLowerCase().includes(term) ||
-                        item.school_code.toLowerCase().includes(term) ||
-                        item.major_code.includes(term)
+                        (item.school_name || '').toLowerCase().includes(term) ||
+                        (item.major_name || '').toLowerCase().includes(term) ||
+                        (item.school_code || '').toLowerCase().includes(term) ||
+                        (item.major_code || '').includes(term)
                     );
                     renderData(filtered);
                 });
             } catch (error) {
-                console.error("Lỗi load dữ liệu:", error);
-                document.getElementById('dataContainer').innerHTML = `<p class="text-center text-red-500 py-10">Không thể tải dữ liệu. Hãy đảm bảo bạn đang chạy qua một server (ví dụ: Live Server).</p>`;
+                console.error("Lỗi khởi tạo:", error);
+                document.getElementById('dataContainer').innerHTML = `<p class="text-center text-red-500 py-10">${error.message}</p>`;
             }
+        }
+
+        function switchTab(tab) {
+            const searchView = document.getElementById('searchView');
+            const strategyView = document.getElementById('strategyView');
+            const tabSearch = document.getElementById('tab-search');
+            const tabStrategy = document.getElementById('tab-strategy');
+
+            if (tab === 'search') {
+                searchView.classList.remove('hidden');
+                strategyView.classList.add('hidden');
+                tabSearch.classList.add('nav-item-active');
+                tabSearch.classList.remove('text-gray-400');
+                tabStrategy.classList.remove('nav-item-active');
+                tabStrategy.classList.add('text-gray-400');
+            } else {
+                searchView.classList.add('hidden');
+                strategyView.classList.remove('hidden');
+                tabSearch.classList.remove('nav-item-active');
+                tabSearch.classList.add('text-gray-400');
+                tabStrategy.classList.add('nav-item-active');
+                tabStrategy.classList.remove('text-gray-400');
+                // Vẽ lại biểu đồ khi tab hiển thị để tránh lỗi hiển thị
+                if (strategyData) renderStrategy(strategyData);
+            }
+            window.scrollTo(0, 0);
         }
 
         function renderData(data) {
@@ -117,98 +224,253 @@
             const template = document.getElementById('cardTemplate');
             const countEl = document.getElementById('resultCount');
 
+            if (!container || !template) return;
             container.innerHTML = '';
             countEl.textContent = `Tìm thấy ${data.length} kết quả`;
 
-            // Sắp xếp dữ liệu theo điểm 2025 giảm dần
             const sortedData = [...data].sort((a, b) => {
-                const scoreA = a.scores["2025"] || 0;
-                const scoreB = b.scores["2025"] || 0;
-                return scoreB - scoreA;
+                const sA = (a.scores && a.scores["2025"]) || 0;
+                const sB = (b.scores && b.scores["2025"]) || 0;
+                return sB - sA;
             });
 
             sortedData.forEach(item => {
                 const clone = template.content.cloneNode(true);
-
-                clone.querySelector('.school-code').textContent = item.school_code;
-                clone.querySelector('.school-name').textContent = item.school_name;
-                clone.querySelector('.major-name').textContent = item.major_name;
-                clone.querySelector('.major-code').textContent = item.major_code;
-                clone.querySelector('.career-text').textContent = item.career_opportunities;
-                clone.querySelector('.criteria-text').textContent = item.selection_criteria;
-                clone.querySelector('.detail-url').href = item.url;
+                clone.querySelector('.school-code').textContent = item.school_code || '---';
+                clone.querySelector('.school-name').textContent = item.school_name || '---';
+                clone.querySelector('.major-name').textContent = item.major_name || '---';
+                clone.querySelector('.major-code').textContent = item.major_code || '---';
+                clone.querySelector('.career-text').textContent = item.career_opportunities || 'Đang cập nhật...';
+                clone.querySelector('.criteria-text').textContent = item.selection_criteria || 'Đang cập nhật...';
+                clone.querySelector('.detail-url').href = item.url || '#';
 
                 const canvas = clone.querySelector('.score-chart');
-                // Sắp xếp năm tăng dần để vẽ biểu đồ từ trái sang phải
-                const years = Object.keys(item.scores).sort((a, b) => a - b);
-                const scores = years.map(y => item.scores[y]);
+                if (item.scores && canvas) {
+                    const years = Object.keys(item.scores).sort((a, b) => a - b);
+                    const scores = years.map(y => item.scores[y]);
 
-                // Render Chart sau khi element đã được thêm vào DOM
-                setTimeout(() => {
-                    new Chart(canvas, {
-                        type: 'bar',
-                        data: {
-                            labels: years,
-                            datasets: [{
-                                label: 'Điểm',
-                                data: scores,
-                                backgroundColor: years.map(y => y === '2025' ? '#ef4444' : '#3b82f6'),
-                                borderRadius: 6,
-                                barPercentage: 0.6
-                            }]
-                        },
-                        plugins: [{
-                            id: 'datalabels',
-                            afterDatasetsDraw(chart) {
-                                const { ctx, data } = chart;
-                                ctx.save();
-                                ctx.font = 'bold 10px Inter';
-                                ctx.textAlign = 'center';
-                                ctx.textBaseline = 'bottom';
-                                chart.getDatasetMeta(0).data.forEach((bar, index) => {
-                                    const value = data.datasets[0].data[index];
-                                    ctx.fillStyle = years[index] === '2025' ? '#ef4444' : '#475569';
-                                    ctx.fillText(value, bar.x, bar.y - 5);
-                                });
-                                ctx.restore();
-                            }
-                        }],
-                        options: {
-                            responsive: true,
-                            maintainAspectRatio: false,
-                            layout: {
-                                padding: { top: 20 }
+                    setTimeout(() => {
+                        new Chart(canvas, {
+                            type: 'bar',
+                            data: {
+                                labels: years,
+                                datasets: [{
+                                    data: scores,
+                                    backgroundColor: years.map(y => y === '2025' ? '#ef4444' : '#3b82f6'),
+                                    borderRadius: 4
+                                }]
                             },
-                            plugins: {
-                                legend: { display: false },
-                                tooltip: {
-                                    backgroundColor: '#1e293b',
-                                    titleFont: { size: 10 },
-                                    bodyFont: { size: 12 },
-                                    displayColors: false
+                            plugins: [{
+                                id: 'datalabels',
+                                afterDatasetsDraw(chart) {
+                                    const { ctx, data } = chart;
+                                    ctx.save();
+                                    ctx.font = 'bold 10px Inter';
+                                    ctx.textAlign = 'center';
+                                    ctx.textBaseline = 'bottom';
+                                    chart.getDatasetMeta(0).data.forEach((bar, index) => {
+                                        const value = data.datasets[0].data[index];
+                                        if (value) {
+                                            ctx.fillStyle = years[index] === '2025' ? '#ef4444' : '#475569';
+                                            ctx.fillText(value, bar.x, bar.y - 5);
+                                        }
+                                    });
+                                    ctx.restore();
                                 }
+                            }],
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                layout: { padding: { top: 15 } },
+                                plugins: { legend: { display: false } },
+                                scales: {
+                                    y: { display: false },
+                                    x: { ticks: { font: { size: 10 } } }
+                                }
+                            }
+                        });
+                    }, 0);
+                }
+                container.appendChild(clone);
+            });
+        }
+
+        function renderStrategy(data) {
+            if (!data || !data.student_status || !data.application_strategy) return;
+
+            const statsContainer = document.getElementById('studentStats');
+            const currentTotal = (data.student_status.current_scores && data.student_status.current_scores.total_a00) || 0;
+            const targetScore = data.student_status.target_score || 0;
+
+            const stats = [
+                { label: 'Điểm hiện tại', value: currentTotal, color: 'text-blue-600', icon: 'fa-star' },
+                { label: 'Mục tiêu 2026', value: targetScore, color: 'text-red-600', icon: 'fa-bullseye' },
+                { label: 'Xu hướng', value: data.student_status.trend || '---', color: 'text-green-600', icon: 'fa-chart-line' },
+                { label: 'Số nguyện vọng', value: data.application_strategy.length, color: 'text-purple-600', icon: 'fa-list-ol' }
+            ];
+
+            if (statsContainer) {
+                statsContainer.innerHTML = stats.map(s => `
+                    <div class="bg-white p-3 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="text-gray-400 text-[10px] font-bold uppercase mb-1">${s.label}</div>
+                        <div class="flex items-center">
+                            <i class="fas ${s.icon} ${s.color} text-sm mr-2"></i>
+                            <span class="text-lg font-bold text-gray-900">${s.value}</span>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Render Score History Chart
+            const chartCanvas = document.getElementById('studentScoreChart');
+            if (chartCanvas && data.student_status.score_history) {
+                const ctx = chartCanvas.getContext('2d');
+                const history = data.student_status.score_history;
+                const attempts = history.map(h => `Lần ${h.attempt}`);
+
+                const mathScores = history.map(h => h.math);
+                const physicsScores = history.map(h => h.physics);
+                const chemistryScores = history.map(h => h.chemistry);
+                const totalScores = history.map(h => h.total);
+
+                if (window.myStudentChart) window.myStudentChart.destroy();
+                window.myStudentChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: attempts,
+                        datasets: [
+                            { label: 'Toán', data: mathScores, backgroundColor: '#fbbf24', borderRadius: 4, order: 2 },
+                            { label: 'Lý', data: physicsScores, backgroundColor: '#10b981', borderRadius: 4, order: 2 },
+                            { label: 'Hóa', data: chemistryScores, backgroundColor: '#8b5cf6', borderRadius: 4, order: 2 },
+                            {
+                                label: 'Tổng điểm',
+                                data: totalScores,
+                                type: 'line',
+                                borderColor: '#3b82f6',
+                                backgroundColor: 'transparent',
+                                borderWidth: 3,
+                                pointRadius: 4,
+                                pointBackgroundColor: '#3b82f6',
+                                tension: 0.4,
+                                order: 1,
+                                yAxisID: 'yTotal'
                             },
-                            scales: {
-                                y: {
-                                    beginAtZero: false,
-                                    min: Math.min(...scores) - 2 > 0 ? Math.floor(Math.min(...scores) - 2) : 0,
-                                    grid: {
-                                        display: true,
-                                        color: '#f1f5f9'
-                                    },
-                                    ticks: { font: { size: 10 } }
-                                },
-                                x: {
-                                    grid: { display: false },
-                                    ticks: { font: { size: 10 } }
+                            {
+                                label: 'Mục tiêu 2026',
+                                data: Array(attempts.length).fill(targetScore),
+                                type: 'line',
+                                borderColor: '#ef4444',
+                                borderDash: [5, 5],
+                                pointRadius: 0,
+                                fill: false,
+                                borderWidth: 2,
+                                order: 1,
+                                yAxisID: 'yTotal'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { position: 'bottom', labels: { usePointStyle: true, padding: 15, font: { size: 10, weight: 'bold' } } },
+                            tooltip: { mode: 'index', intersect: false, backgroundColor: '#1e293b' }
+                        },
+                        scales: {
+                            y: { beginAtZero: true, max: 10, title: { display: true, text: 'Điểm môn', font: { size: 10, weight: 'bold' } }, grid: { color: '#f1f5f9' } },
+                            yTotal: { beginAtZero: false, position: 'right', min: 15, max: 25, title: { display: true, text: 'Tổng điểm', font: { size: 10, weight: 'bold' } }, grid: { display: false } },
+                            x: { grid: { display: false } }
+                        }
+                    }
+                });
+            }
+
+            // Render Group Distribution Chart
+            const groupCtx = document.getElementById('groupDistributionChart');
+            if (groupCtx) {
+                const groups = data.application_strategy.reduce((acc, item) => {
+                    const g = item.group.split(' ')[0];
+                    acc[g] = (acc[g] || 0) + 1;
+                    return acc;
+                }, {});
+
+                const labels = ['Vượt', 'Vừa', 'An'];
+                const values = [groups['Vượt'] || 0, groups['Vừa'] || 0, groups['An'] || 0];
+                const colors = ['#ef4444', '#10b981', '#3b82f6'];
+
+                if (window.myGroupChart) window.myGroupChart.destroy();
+                window.myGroupChart = new Chart(groupCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: values,
+                            backgroundColor: colors,
+                            borderWidth: 0,
+                            hoverOffset: 10
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        cutout: '70%',
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                backgroundColor: '#1e293b',
+                                callbacks: {
+                                    label: (context) => ` ${context.label}: ${context.raw} NV`
                                 }
                             }
                         }
-                    });
-                }, 0);
+                    }
+                });
 
-                container.appendChild(clone);
-            });
+                // Update Group Stats Summary
+                const statsSummary = document.getElementById('groupStatsSummary');
+                if (statsSummary) {
+                    statsSummary.innerHTML = labels.map((label, i) => `
+                        <div class="text-center">
+                            <div class="text-[10px] font-bold text-gray-400 uppercase">${label}</div>
+                            <div class="text-sm font-bold" style="color: ${colors[i]}">${values[i]}</div>
+                        </div>
+                    `).join('');
+                }
+            }
+
+            const tbody = document.getElementById('strategyTableBody');
+            if (tbody) {
+                tbody.innerHTML = data.application_strategy.map(item => {
+                    let groupClass = "bg-gray-100 text-gray-600";
+                    const group = item.group || "";
+                    if (group.includes("Vượt ngưỡng")) groupClass = "bg-red-100 text-red-700";
+                    if (group.includes("Vừa sức")) groupClass = "bg-green-100 text-green-700";
+                    if (group.includes("An toàn")) groupClass = "bg-blue-100 text-blue-700";
+
+                    return `
+                        <tr class="hover:bg-gray-50 transition-colors border-b border-gray-50">
+                            <td class="px-2 py-3 font-bold text-gray-400 text-center text-xs">${item.priority || '?'}</td>
+                            <td class="px-4 py-3">
+                                <div class="font-bold text-gray-900 text-sm leading-tight">${item.major_name || '---'}</div>
+                                <div class="text-[10px] text-gray-500 mt-0.5">${item.school_name || '---'}</div>
+                            </td>
+                            <td class="px-2 py-3 text-center">
+                                <span class="text-[9px] font-bold px-1.5 py-0.5 rounded-full uppercase ${groupClass}">
+                                    ${group.split(' ')[0] || '---'}
+                                </span>
+                            </td>
+                            <td class="px-2 py-3 text-center">
+                                <span class="inline-block bg-gray-100 text-gray-900 font-mono font-bold px-1.5 py-0.5 rounded text-[11px]">
+                                    ${item.score_2025 || '---'}
+                                </span>
+                            </td>
+                            <td class="px-4 py-3 text-[11px] text-gray-600 italic">
+                                ${item.note || ''}
+                            </td>
+                        </tr>
+                    `;
+                }).join('');
+            }
         }
 
         init();
