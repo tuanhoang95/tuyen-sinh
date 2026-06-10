@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu Điểm Tuyển Sinh 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .score-badge { transition: all 0.2s; }
+        .score-badge:hover { transform: translateY(-2px); }
+    </style>
+</head>
+<body class="pb-10">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <h1 class="text-xl font-bold flex items-center justify-center lg:justify-start">
+                <i class="fas fa-graduation-cap mr-2"></i> Tra Cứu Tuyển Sinh
+            </h1>
+            <div class="mt-4 relative">
+                <label for="searchInput" class="sr-only">Tìm kiếm</label>
+                <input type="text" id="searchInput"
+                    placeholder="Tìm tên trường, ngành hoặc mã..."
+                    class="w-full py-3 px-11 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300 shadow-inner">
+                <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 mt-6">
+        <!-- Stats/Info -->
+        <div id="resultCount" class="mb-4 text-sm text-gray-600 font-medium italic"></div>
+
+        <!-- Content Grid -->
+        <div id="dataContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Loading skeleton or JS will inject cards here -->
+        </div>
+    </main>
+
+    <!-- Template for Card -->
+    <template id="cardTemplate">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+            <div class="p-5">
+                <div class="flex justify-between items-start mb-3">
+                    <span class="bg-blue-100 text-blue-700 text-xs font-bold px-2.5 py-1 rounded-full school-code"></span>
+                    <div class="text-[10px] text-gray-400 font-bold uppercase">Biến động điểm số</div>
+                </div>
+
+                <h2 class="text-lg font-bold text-gray-900 leading-tight mb-1 major-name"></h2>
+                <p class="text-sm text-gray-500 font-medium mb-3 school-name"></p>
+
+                <!-- Chart Container -->
+                <div class="mb-4 h-32 w-full">
+                    <canvas class="score-chart"></canvas>
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="flex items-center text-sm font-bold text-gray-800 w-full mb-1">
+                            <i class="fas fa-briefcase text-blue-500 mr-2 w-4"></i> Cơ hội nghề nghiệp
+                        </h3>
+                        <div class="text-sm text-gray-600 career-text pl-6 leading-relaxed"></div>
+                    </div>
+
+                    <div class="pt-3 border-t border-gray-50">
+                        <h3 class="flex items-center text-sm font-bold text-gray-800 w-full mb-1">
+                            <i class="fas fa-info-circle text-orange-500 mr-2 w-4"></i> Tiêu chí xét tuyển
+                        </h3>
+                        <div class="text-sm text-gray-600 criteria-text pl-6 leading-relaxed"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 px-5 py-3 flex justify-between items-center">
+                <span class="text-xs text-gray-400">Mã ngành: <span class="major-code font-mono"></span></span>
+                <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 text-sm font-bold flex items-center detail-url">
+                    Chi tiết <i class="fas fa-external-link-alt ml-1.5 text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        let allData = [];
+
+        async function init() {
+            try {
+                // Load dữ liệu từ cùng thư mục
+                const response = await fetch('diem_tuyen_sinh_filtered.json');
+                allData = await response.json();
+
+                renderData(allData);
+
+                document.getElementById('searchInput').addEventListener('input', (e) => {
+                    const term = e.target.value.toLowerCase().trim();
+                    const filtered = allData.filter(item =>
+                        item.school_name.toLowerCase().includes(term) ||
+                        item.major_name.toLowerCase().includes(term) ||
+                        item.school_code.toLowerCase().includes(term) ||
+                        item.major_code.includes(term)
+                    );
+                    renderData(filtered);
+                });
+            } catch (error) {
+                console.error("Lỗi load dữ liệu:", error);
+                document.getElementById('dataContainer').innerHTML = `<p class="text-center text-red-500 py-10">Không thể tải dữ liệu. Hãy đảm bảo bạn đang chạy qua một server (ví dụ: Live Server).</p>`;
+            }
+        }
+
+        function renderData(data) {
+            const container = document.getElementById('dataContainer');
+            const template = document.getElementById('cardTemplate');
+            const countEl = document.getElementById('resultCount');
+
+            container.innerHTML = '';
+            countEl.textContent = `Tìm thấy ${data.length} kết quả`;
+
+            // Sắp xếp dữ liệu theo điểm 2025 giảm dần
+            const sortedData = [...data].sort((a, b) => {
+                const scoreA = a.scores["2025"] || 0;
+                const scoreB = b.scores["2025"] || 0;
+                return scoreB - scoreA;
+            });
+
+            sortedData.forEach(item => {
+                const clone = template.content.cloneNode(true);
+
+                clone.querySelector('.school-code').textContent = item.school_code;
+                clone.querySelector('.school-name').textContent = item.school_name;
+                clone.querySelector('.major-name').textContent = item.major_name;
+                clone.querySelector('.major-code').textContent = item.major_code;
+                clone.querySelector('.career-text').textContent = item.career_opportunities;
+                clone.querySelector('.criteria-text').textContent = item.selection_criteria;
+                clone.querySelector('.detail-url').href = item.url;
+
+                const canvas = clone.querySelector('.score-chart');
+                // Sắp xếp năm tăng dần để vẽ biểu đồ từ trái sang phải
+                const years = Object.keys(item.scores).sort((a, b) => a - b);
+                const scores = years.map(y => item.scores[y]);
+
+                // Render Chart sau khi element đã được thêm vào DOM
+                setTimeout(() => {
+                    new Chart(canvas, {
+                        type: 'line',
+                        data: {
+                            labels: years,
+                            datasets: [{
+                                label: 'Điểm',
+                                data: scores,
+                                borderColor: '#2563eb',
+                                backgroundColor: 'rgba(37, 99, 235, 0.1)',
+                                borderWidth: 2,
+                                fill: true,
+                                tension: 0.4,
+                                pointBackgroundColor: '#2563eb',
+                                pointRadius: 4
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: { display: false },
+                                tooltip: {
+                                    backgroundColor: '#1e293b',
+                                    titleFont: { size: 10 },
+                                    bodyFont: { size: 12 },
+                                    displayColors: false
+                                }
+                            },
+                            scales: {
+                                y: {
+                                    beginAtZero: false,
+                                    grid: { display: false },
+                                    ticks: { font: { size: 10 } }
+                                },
+                                x: {
+                                    grid: { display: false },
+                                    ticks: { font: { size: 10 } }
+                                }
+                            }
+                        }
+                    });
+                }, 0);
+
+                container.appendChild(clone);
+            });
+        }
+
+        init();
+    </script>
+</body>
+</html>
